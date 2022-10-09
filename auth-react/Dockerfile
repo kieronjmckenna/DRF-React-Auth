@@ -1,5 +1,5 @@
-FROM node:latest
-WORKDIR /code
-COPY package*.json /code/
+FROM node:16.0.0
+WORKDIR /client
+COPY package*.json /client/
 RUN npm install
-COPY . /code/
+COPY . /client/

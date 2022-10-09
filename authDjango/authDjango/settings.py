@@ -77,16 +77,10 @@ WSGI_APPLICATION = 'authDjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'authTesting',
-        'USER': 'postgres',
-        'PASSWORD': '...',
-        # 'HOST': 'localhost',
-        'HOST': 'host.docker.internal',
-        'PORT': 5433,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
